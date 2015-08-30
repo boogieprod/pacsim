@@ -1,0 +1,19 @@
+<template name="simCards">
+  <div class="ui grid equal width">
+    {{#each sim_cards}}
+      <div class="column">
+        <div class="ui segment center aligned">
+          <div class="header">
+            {{name}}
+          </div>
+          <img class="sim-thumb" src="/images/products/{{thumb}}" alt="{{name}}" />
+          <div>
+            {{_ 'price'}} : {{currency price}}
+          </div>
+          <hr>
+          {{> addToCart}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

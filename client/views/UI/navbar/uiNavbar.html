@@ -1,0 +1,29 @@
+<template name="uiNavbar">
+  <div class="ui grid">
+    <a href="{{pathFor 'homeUI'}}" class="four wide column">
+      <div class="ui segment">
+        <i class="circular copyright icon"></i>
+        {{constant 'name'}}
+      </div>
+    </a>
+    <a class="four wide column" href="#">
+      <div class="ui segment">
+        <i class="circular help square icon"></i>
+        {{_ 'assistance'}}
+      </div>
+    </a>
+    <div class="three wide column">
+      <div class="ui segment">
+        <i class="circular options icon"></i>
+        {{> i18n_dropdown}}
+      </div>
+    </div>
+    <a class="five wide column" href="{{pathFor 'shoppingCart'}}">
+      <div class="ui segment shopping-cart">
+        <i class="circular shop icon"></i>
+        {{_ 'shopping_cart'}}
+        ({{currency totalaftertax}})
+      </div>
+    </a>
+  </div>
+</template>

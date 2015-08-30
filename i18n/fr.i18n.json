@@ -1,0 +1,195 @@
+{
+  /* Header */
+
+  "by": "Par",
+  "hi": "Bonjour",
+  "log_out": "Se d\u00E9connecter",
+
+  /* Slide Alerts */
+
+	"qty_set_0_or_less": "Vous devez ajouter au moins 1 unit\u00E9.",
+	"item_0_when_checkout": "Il doit y avoir au moins 1 produit dans le panier afin de continuer au paiement.",
+	"qty_set_10_or_more": "Un maximum de 9 unit\u00E9s du m\u00EAme produit peuvent \u00EAtre ajout\u00E9es sur une facture individuelle.",
+	"qty_adjusted_10_or_less": "La quantit\u00E9 minimum d'un produit au panier est 1",
+	"homepage_back_error": "Vous \u00E8tes \u00E0 la page d'accueil, vous ne pouvez pas revenir en arri\u00E8re \u00E0 partir de cette page.",
+  "clear_cart_zero_items": "Votre panier est vide",
+  "no_match_show_popular": "Il n'y avait pas de plans r\u00E9pondant \u00E0 vos besoins, voici nos plus populaires.",
+  "fields_with_asterix_mandatory": "Les champs marqu\u00E9s d'un ast\u00E9rix(*) sont obligatoires",
+  "text_not_set": "Le champ de textes est obligatoire",
+  "data_not_set": "Le champ de donn\u00E9es est obligatoire",
+  "minutes_not_set": "Le champ de minutes est obligatoire",
+  "must_select_simsize": "Vous devez choisir un format de carte SIM pour activer votre plan",
+  "must_review_terms": "Vous devez accepter nos termes et conditions",
+  "fname_mandatory": "Vous devez entrer votre pr\u00E9nom",
+  "lname_mandatory": "Vous devez entrer votre nom de famille",
+  "email_mandatory": "Vous devez entrer votre adresse courriel",
+  "areac_mandatory": "Vous devez choisir un code r\u00E9gional pour votre num\u00E9ro de t\u00E9l\u00E9phone",
+
+  /* Home */
+
+  "atmosphere_packs": "Paquets d'Atmospherejs",
+  "dont_wheel": "Ne r\u00E9inventez pas la roue",
+  "lot_of": "Il y a beaucoup de",
+  "helpful_packs": "Paquets utiles",
+  "get_started_asap": "pour vous aider \u00E0 d\u00E9marrer imm\u00E9diatement. Entre autres.",
+  "removed_packs": "Paquets retir\u00E9s",
+  "removed_packs_info": "\"insecure\" et \"autopublish\" sont retir\u00E9s par d\u00E9faut!",
+  "be_faster": "Soyez encore plus rapide",
+  "speed_up_repeat_tasks": "Pour acc\u00E9l\u00E9rer le d\u00E9veloppement de plusieurs t\u00E2ches r\u00E9p\u00E9titives, il y a",
+  "used_with_boiler": "qui peut \u00E8tre utiliser avec ce boilerplate.",
+  "simply_use": "Utilisez simplement",
+  "generate_files_root": "pour g\u00E9n\u00E9rer les fichiers dans la racine du projet",
+  "support_diff_profiles": "Il y a aussi du support pour diff\u00E9rent profiles, tel que montr\u00E9",
+  "here": "ici",
+  "and": "et",
+  "semantic_and_normalize_goal": "Semantic UI et Normalize.CSS ont \u00E9t\u00E9 ajout\u00E9s afin d'accro\u00EEtre l'utilisation des \u00E9tiquettes et des classes de semantic.
+  C'est mieux pour les d\u00E9veloppeurs et les concepteurs graphiques s'il-y-a du code html lisible au lieu de combinaisons de Strings
+  incompr\u00E9hensibles.",
+  "bs3_sem-ui_contrast": "Classes CSS dans Bootstrap 3 et Semantic UI - pour le contraste",
+  "what": "Quoi",
+  "folder_structure": "Structure des dossiers",
+  "seperate_concerns": "S\u00E9parez vos pr\u00E9occupations",
+  "app_structure": "Il y a d\u00E9j\u00E0 une structure fournie pour votre application meteor, avec du contenu pour voir
+  o\u00F9 vous pouvez placer certains types de code ou d'o\u00F9 parvient le code g\u00E9n\u00E9r\u00E9. Voici la structure
+  par d\u00E9faut sous forme de liste:",
+
+  /* Home helpers */
+
+  "trust_packages": "Utilise des paquets fiables",
+  "console_tool": "Outil de console disponible",
+  "embraces_html5": "Mariage parfait avec HTML5",
+  "provides_structure": "Vous fournit une structure",
+  "view_description": "Cr\u00E9e un dossier dans client/views avec un fichier html, less et javascript",
+  "module_description": "Similaire \u00E0 view, sauf dans client/modules et pour des composantes r\u00E9utilisables",
+  "layout_description": "Cr\u00E9e une template pour le \"layout\" qui \"yield\" le contenu, utilis\u00E9 par iron-router",
+  "common_description": "Cr\u00E9e un simple fichier html dans client/views/common",
+  "routes_description": "Cr\u00E9e un groupe de routes navigables dans routes/",
+  "model_description": "Cr\u00E9e un mod\u00E8le avec des fichiers dans model/, client/subscriptions et server/publications",
+  "less_description": "Cr\u00E9e un fichier de style less dans client/stylesheets",
+  "large_buttons": "Boutons larges",
+  "one_column": "Une colonne",
+  "vertical_menu": "Menu vertical / Navigation",
+
+  /* Footer */
+
+  "project_by": "Projet par",
+  "pictures_by": "Photos con\u00E7ues par",
+
+  /* Not found */
+
+  "wrong_link": "Il semble que ce lien n'existe pas",
+  "home_link": "Retour \u00E0 la page m\u00E8re",
+
+  /* UI */
+
+  /* Navbar */
+
+  "assistance": "Besoin d'assistance?",
+  "shopping_cart": "Panier d'achats",
+
+  /* Footer */
+
+  "barcode_scanner": "Lecteur de code barres",
+  "about": "\u00C0 propos de PacSim",
+
+  /* Product selection */
+
+  "activate_sim": "Activer une carte SIM",
+  "buy_ppdcard": "Acheter une carte pr\u00E9pay\u00E9e",
+  "buy_simcard": "Acheter une carte SIM",
+  "buy_intlcard": "Acheter une carte d'appels internationaux",
+
+  /* carriers */
+
+  "carrier_header": "Veuillez s\u00E9lectionner un fournisseur parmi notre s\u00E9lection",
+
+  /* Acto Prompt */
+
+  "auto_activation": "Appuyez ici pour activer une carte SIM selon vos besoins",
+  "manual_activation": "Appuyez ici pour rechercher manuellement dans notre s\u00E9lection de plans disponibles",
+
+  /* Manual plan selection */
+
+  "voice_data_plans": "Forfaits voix et donn\u00E9es",
+  "voice_text_plans": "Forfaits voix et textes",
+  "voice_plans": "Forfaits voix",
+  "data_plans": "Forfaits donn\u00E9es",
+  "no_plans": " ne fournit pas de plans r\u00E9pondant \u00E0 ces crit\u00E8res",
+  "plan_name": "Nom du forfait",
+  "msf": "Tarification mensuelle du plan",
+
+  /* Autoact Survey */
+
+  "survey_header": "Compl\u00E9tez le sondage suivant afin de d\u00E9terminer le plan id\u00E9al pour vos besoins",
+  "query_header": "Quel mot repr\u00E9sente le mieux votre besoin pour ...",
+  "minutes_query": "...les minutes",
+  "text_query": "... les messages textes",
+  "data_query": "... les donn\u00E9es",
+  "default_selection": "S\u00E9lectionnez un mot",
+
+  /* Plans */
+
+  "minutes": "Minutes",
+  "text_messages": "Messages textes",
+  "data": "Donn\u00E9es",
+  "min_card": "Carte minimum requise",
+  "more_details": "Plus de d\u00E9tails",
+
+  /* Plan Details */
+
+  "sim_size": "Veuillez choisir un format de carte SIM",
+  "select_a_size": "Choisissez un format",
+  "nights_and_weekend": "Soirs et fin de semaine",
+  "canadian_ld": "Longues distances au Canada",
+  "us_ld": "Longues distances aux \u00C9tats-Unis",
+  "intl_ld": "Longues distances internationales",
+  "intl_text": "Messages textes internationaux",
+  "pic_messages": "Messages photos",
+  "vid_messages": "Messages vid\u00E9os",
+  "vmail": "Bo\u00EEte vocale",
+  "intl_picmessages": "Messages photos internationaux",
+  "intl_vidmessages": "Messages vid\u00E9os internationaux",
+
+  /* Add To Cart */
+
+  "price": "Prix",
+  "wanted_quantity": "Quantit\u00E9 d\u00E9sir\u00E9e?",
+  "add_to_cart": "Ajouter au panier",
+  "add_and_checkout": "Ajouter au panier et proc\u00E9der au paiement",
+  "qty": "Quantit\u00E9",
+
+  /* Shopping Cart */
+
+  "empty_cart": "Votre panier est vide appuyez ici pour la page de s\u00E9lection de produits",
+  "subtotal": "Sous-total",
+  "proceed_to_checkout": "Passer au paiement",
+  "continue_shopping": "Continuer \u00E0 magasiner",
+  "clear_cart": "Vider le panier",
+  "clear_cart_header": "Cette action va retirer tous les produits de votre panier",
+  "clear_cart_message": "Il n'y a pas de retour en arri\u00E8re, \u00EAtes-vous sur?",
+
+  /* Customer Form */
+
+  "f_name": "Pr\u00E9nom",
+  "l_name": "Nom de famille",
+  "random": "Al\u00E9atoire",
+  "email": "Adresse courriel",
+  "street": "Adresse",
+  "area": "Secteur d'appels",
+  "select_area": "Pour quel secteur d'appel",
+  "province": "Province",
+  "select_province": "Choisir une province",
+  "postal": "Code postal",
+  "mandatory_fields": "Les champs marqu\u00E9s d'un ast\u00E9rix(*) sont obligatoires",
+  "ready_to_pay": "Appuyez ici pour compl\u00E9ter le paiement",
+  "reset_fields": "Effacer les champs",
+  "checkbox_statement": "En marquant cette case, vous acceptez les ",
+  "terms": "termes ",
+  "and": "et les ",
+  "conditions": "conditions d'utilisation",
+
+  /* Provinces */
+
+  "qc": "Qu\u00E9bec",
+  "bc": "Colombie-Britannique"
+}

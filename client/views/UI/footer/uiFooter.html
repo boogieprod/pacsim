@@ -1,0 +1,28 @@
+<template name="uiFooter">
+  <div class="ui grid center aligned">
+    <a href="{{pathFor 'barcodeScanner'}}" class="four wide column">
+      <div class="ui segment">
+        <h4>{{_ 'barcode_scanner'}}</h4>
+        <i class="left floated circular inverted black large barcode icon"></i>
+      </div>
+    </a>
+    <div class="center aligned eight wide column">
+      <a id="goBack" href="">
+        <div class="ui circular segment">
+          <i class="circular inverted black large arrow left icon"></i>
+        </div>
+      </a>
+      <a href="{{pathFor 'productSelection'}}">
+        <div class="ui circular segment">
+          <i class="circular inverted black large home icon"></i>
+        </div>
+      </a>
+    </div>
+    <a class="four wide column" href="{{pathFor 'aboutPacsim'}}">
+      <div class="ui segment">
+        <h4>{{_ 'about'}}</h4>
+        <i class="left floated circular inverted black large info icon"></i>
+      </div>
+    </a>
+  </div>
+</template>

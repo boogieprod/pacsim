@@ -1,0 +1,23 @@
+<template name="plans">
+  <div class="ui segment">
+    <div class="ui header">
+    {{name}} - {{msf}}
+    </div>
+    <hr>
+    <div>
+      <strong>{{_ 'minutes'}}:</strong> {{minutes}}
+    </div>
+    <div>
+      <strong>{{_ 'text_messages'}}:</strong> {{textmessages}}
+    </div>
+    <div>
+      <strong>{{_ 'data'}}:</strong> {{data}}
+    </div>
+    <div>
+      <strong>{{_ 'min_card'}}:</strong> {{mintopup}}
+    </div>
+    <div>
+      <a href="{{pathFor 'planDetails'}}">{{_ 'more_details'}}</a>
+    </div>
+  </div>
+</template>

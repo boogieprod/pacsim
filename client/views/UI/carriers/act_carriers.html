@@ -1,0 +1,14 @@
+<template name="manualActoCarriers">
+  <div class="ui grid center aligned" id="carriers-box">
+  <h2 class="ui header">{{_ 'carrier_header'}}</h2>
+    {{#each carriers}}
+      <div class="three wide column">
+        <div class="ui segment">
+          <a href="{{pathFor 'manualPlanSelection'}}">
+            {{> carrier}}
+          </a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

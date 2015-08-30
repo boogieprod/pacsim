@@ -1,0 +1,408 @@
+<template name="manualPlanSelection">
+  <div class="ui grid" id="plans-accordion">
+    <div class="sixteen wide column">
+      <div class="ui accordion">
+        <div class="title active">
+          <i class="dropdown icon"></i>
+          {{_ 'voice_data_plans'}}
+        </div>
+        <div class="content active">
+          <div class="ui grid">
+            <div class="column transition active">
+              <table class="ui striped table" id="manual-plan-table">
+                <thead>
+                  <tr>
+                    <th class="two wide">
+                      {{_ 'plan_name'}}
+                    </th>
+                    {{#each vdPlans}}
+                    <th class="three wide">
+                      <a href="{{pathFor 'planDetails'}}">{{name}} - {{msf}}</a>
+                    </th>
+                    {{else}}
+                    <th>
+                      {{carrierName}} {{_ 'no_plans'}}
+                    </th>
+                    {{/each}}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      {{_ 'minutes'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{minutes}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'text_messages'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{textmessages}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'data'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{data}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'nights_and_weekend'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{nightsandweekend}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'canadian_ld'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{canlongdistance}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'intl_text'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{intltextmess}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'vmail'}}
+                    </td>
+                    {{#each vdPlans}}
+                    <td>
+                      {{vmail}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <i class="dropdown icon"></i>
+          {{_ 'voice_text_plans'}}
+        </div>
+        <div class="content">
+          <div class="ui grid">
+            <div class="column transition active">
+              <table class="ui striped table" id="manual-plan-table">
+                <thead>
+                  <tr>
+                    <th>
+                      {{_ 'plan_name'}}
+                    </th>
+                    {{#each vtPlans}}
+                    <th>
+                      {{name}} - {{msf}}
+                    </th>
+                    {{else}}
+                    <th>
+                      {{carrierName}} {{_ 'no_plans'}}
+                    </th>
+                    {{/each}}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      {{_ 'minutes'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{minutes}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'text_messages'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{textmessages}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'data'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{data}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'nights_and_weekend'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{nightsandweekend}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'canadian_ld'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{canlongdistance}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'intl_text'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{intltextmess}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'vmail'}}
+                    </td>
+                    {{#each vtPlans}}
+                    <td>
+                      {{vmail}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <i class="dropdown icon"></i>
+          {{_ 'voice_plans'}}
+        </div>
+        <div class="content">
+          <div class="ui grid">
+            <div class="column transition active">
+              <table class="ui striped table" id="manual-plan-table">
+                <thead>
+                  <tr>
+                    <th class="two wide">
+                      {{_ 'plan_name'}}
+                    </th>
+                    {{#each voPlans}}
+                    <th class="three wide">
+                      <a href="{{pathFor 'planDetails'}}">{{name}} - {{msf}}</a>
+                    </th>
+                    {{else}}
+                    <th>
+                      {{carrierName}} {{_ 'no_plans'}}
+                    </th>
+                    {{/each}}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      {{_ 'minutes'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{minutes}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'text_messages'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{textmessages}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'data'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{data}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'nights_and_weekend'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{nightsandweekend}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'canadian_ld'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{canlongdistance}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'intl_text'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{intltextmess}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'vmail'}}
+                    </td>
+                    {{#each voPlans}}
+                    <td>
+                      {{vmail}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <i class="dropdown icon"></i>
+          {{_ 'data_plans'}}
+        </div>
+        <div class="content">
+          <div class="ui grid">
+            <div class="column transition active">
+              <table class="ui striped table" id="manual-plan-table">
+                <thead>
+                  <tr>
+                    <th class="two wide">
+                      {{_ 'plan_name'}}
+                    </th>
+                    {{#each doPlans}}
+                    <th class="three wide">
+                      <a href="{{pathFor 'planDetails'}}">{{name}} - {{msf}}</a>
+                    </th>
+                    {{else}}
+                    <th>
+                      {{carrierName}} {{_ 'no_plans'}}
+                    </th>
+                    {{/each}}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      {{_ 'minutes'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{minutes}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'text_messages'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{textmessages}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'data'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{data}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'nights_and_weekend'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{nightsandweekend}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'canadian_ld'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{canlongdistance}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'intl_text'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{intltextmess}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                  <tr>
+                    <td>
+                      {{_ 'vmail'}}
+                    </td>
+                    {{#each doPlans}}
+                    <td>
+                      {{vmail}}
+                    </td>
+                    {{/each}}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

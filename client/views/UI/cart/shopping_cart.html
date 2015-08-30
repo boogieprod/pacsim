@@ -1,0 +1,50 @@
+<template name="shoppingCart">
+  <div class="ui two column grid" id="shop-cart-box">
+    <div class="three wide column">
+      {{> totalBox}}
+      <div id="total-buttons">
+        <button class="ui fluid small positive button proceed-to-checkout">
+          {{_ 'proceed_to_checkout'}}
+        </button>
+        <hr>
+        <button class="ui fluid small blue button continue-shopping">
+          {{_ 'continue_shopping'}}
+        </button>
+        <hr>
+        <button class="ui fluid small negative button clearCart">
+          {{_ 'clear_cart'}}
+        </button>
+      </div>
+    </div>
+  <div class="thirteen wide column">
+    <div class="ui equal width grid">
+    {{#each cartitems}}
+      <div class="five wide column">
+        <div class="ui segment">
+          <h4 class="header">{{productName}}</h4>
+          <div class="ui small labeled input">
+            <input type="number" value="{{qty}}" min="1" max="9" class="shop-cart-input-qty">
+            <button class="ui red small button floated right removeCartItem">X</button>
+          </div>
+          <div>
+            {{currency productPrice}}
+          </div>
+        </div>
+      </div>
+    {{else}}
+      <div class="twelve wide column">
+        <div class="ui grid">
+          <div class="twelve wide column">
+            <a href="{{pathFor 'productSelection'}}">
+              <div class="ui segment">
+                {{_ 'empty_cart'}}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+  </div>
+</template>

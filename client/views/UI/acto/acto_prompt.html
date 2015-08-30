@@ -1,0 +1,18 @@
+<template name="actoPrompt">
+  <div class="ui two column grid center aligned">
+    <div class="column">
+      <a href="{{pathFor 'autoSurvey'}}">
+        <div id="auto-acto" class="ui segment">
+          <h1 class="ui header">{{_ 'auto_activation'}}</h1>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="{{pathFor 'manualActoCarriers'}}">
+        <div id="manual-acto" class="ui segment">
+          <h1 class="ui header">{{_ 'manual_activation'}}</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+</template>

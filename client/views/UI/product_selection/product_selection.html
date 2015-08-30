@@ -1,0 +1,34 @@
+<template name="productSelection">
+  <div class="ui two column grid center aligned">
+    <div class="column">
+      <a href="{{pathFor 'actoPrompt'}}">
+        <div class="ui segment" id="sim-activation-box">
+          <div class="ui header">{{_ 'activate_sim'}}</div>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="{{pathFor 'ppdCarriers'}}">
+        <div class="ui segment" id="prepaid-card-box">
+          <div class="ui header">{{_ 'buy_ppdcard'}}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="ui two column grid center aligned">
+    <div class="column">
+      <a href="{{pathFor 'simCarriers'}}">
+        <div class="ui segment" id="sim-purchase-box">
+          <div class="ui header">{{_ 'buy_simcard'}}</div>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="#">
+        <div class="ui segment" id="intl-card-box">
+          <div class="ui header">{{_ 'buy_intlcard'}}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</template>

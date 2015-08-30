@@ -1,0 +1,18 @@
+<template name="uiLayout">
+  <div id="uiMain">
+    <header>
+      {{> uiNavbar}}
+      {{> progressBar}}
+    </header>
+
+    <section id="main_yield">
+				{{> yield}}
+			
+      {{> sAlert}}
+    </section>
+
+    <footer>
+      {{> uiFooter}}
+    </footer>
+  </div>
+</template>

@@ -1,0 +1,106 @@
+<template name="planSuggestions">
+  <div class="ui grid" id="plans-box">
+    <div class="column">
+      <table class="ui striped table" id="manual-plan-table">
+        <thead>
+          <tr>
+            <th class="two wide">
+              {{_ 'plan_name'}}
+            </th>
+            {{#each filteredplans}}
+            <th class="two wide">
+              <a href="{{pathFor 'planDetails'}}">{{name}}</a>
+            </th>
+            {{else}}
+            <th>
+              {{carrierName}} {{_ 'no_plans'}}
+            </th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {{_ 'minutes'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{minutes}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'text_messages'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{textmessages}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'data'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{data}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'nights_and_weekend'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{nightsandweekend}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'canadian_ld'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{canlongdistance}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'intl_text'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{intltextmess}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'vmail'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{vmail}}
+            </td>
+            {{/each}}
+          </tr>
+          <tr>
+            <td>
+              {{_ 'msf'}}
+            </td>
+            {{#each filteredplans}}
+            <td>
+              {{msf}}
+            </td>
+            {{/each}}
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

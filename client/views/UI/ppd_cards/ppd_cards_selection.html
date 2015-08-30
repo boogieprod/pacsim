@@ -1,0 +1,19 @@
+<template name="ppdCards">
+  <div class="ui grid equal width">
+    {{#each ppd_cards}}
+      <div class="column">
+        <div class="ui segment center aligned">
+          <div class="header">
+            {{name}}
+          </div>
+          <img class="ppd-thumb" src="/images/products/{{thumb}}" alt="{{name}}" />
+          <div>
+            {{currency price}}
+          </div>
+          <hr>
+          {{> addToCart}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

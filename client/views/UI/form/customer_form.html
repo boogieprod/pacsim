@@ -1,0 +1,97 @@
+<template name="customerForm">
+  <div class="ui grid">
+    <div class="sixteen wide column">
+      <form class="ui form" id="customer-form">
+        <div class="three fields">
+          <div class="required field" id="fname-field">
+            <label>{{_ 'f_name'}}</label>
+            <input type="text" name="fname">
+          </div>
+          <div class="required field" id="lname-field">
+            <label>{{_ 'l_name'}}</label>
+            <input type="text" name="lname">
+          </div>
+          <div class="required field" id="email-field">
+            <label>{{_ 'email'}}</label>
+            <input type="email" name="email">
+          </div>
+        </div>
+        <hr>
+        <div class="four fields">
+          <div class="field">
+            <label>
+              {{_ 'street'}}
+            </label>
+            <input type="text" name="street">
+          </div>
+          <div class="field">
+            <label>{{_ 'postal'}}</label>
+            <input type="text" name="postal">
+          </div>
+          <div class="field">
+            <label>{{_ 'province'}}</label>
+            <select class="ui dropdown" name="province">
+              <option value="">{{_ 'select_province'}}</option>
+              {{#each provinces}}
+                <option value="{{id}}">{{name}}</option>
+              {{/each}}
+            </select>
+          </div>
+          <div class="required field" id="areacode-field">
+            <label>{{_ 'area'}}</label>
+            <select class="ui large dropdown" name="areacode">
+              <option value="">{{_ 'select_area'}}</option>
+              {{#each areacodes}}
+                <option value="{{_id}}">{{name}} - {{code}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+        <div class="ui small message">
+          <p>
+            {{_ 'mandatory_fields'}}
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="ui grid left aligned" id="total-box">
+      <div class="twelve wide column">
+        <form class="ui form segment">
+          <div class="required field" id="agreement-field">
+            <div class="ui checkbox">
+              <input type="checkbox" id="agreement" name="agreement">
+              <label for="agreement">{{_ 'checkbox_statement'}}
+                <a href="#">{{_ 'terms'}}</a>
+                {{_ 'and'}}
+                <a href="#">{{_ 'conditions'}}</a>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <button class="ui green labeled icon button make-payment">
+            <i class="money icon"></i>
+            <div class="right label">
+              {{_ 'ready_to_pay'}}
+            </div>
+          </button>
+          <button class="ui red clear button" id="reset-button">
+            {{_ 'reset_fields'}}
+          </button>
+        </form>
+      </div>
+      <div class="four wide column">
+        <div class="ui segment">
+          <div>
+            {{_ 'subtotal'}} : {{currency subtotal}}
+            <hr>
+            GST : {{currency canadiantaxes}}
+            <hr>
+            QST : {{currency provincialtaxes}}
+            <hr>
+            Total : {{currency totalaftertax}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

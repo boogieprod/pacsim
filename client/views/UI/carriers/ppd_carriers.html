@@ -1,0 +1,14 @@
+<template name="ppdCarriers">
+  <div class="ui grid center aligned" id="carriers-box">
+    <div class="ui header">{{_ 'carrier_header'}}</div>
+    {{#each carriers}}
+      <div class="three wide column">
+        <div class="ui segment">
+          <a href="{{pathFor 'ppdCards'}}">
+            {{> carrier}}
+          </a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

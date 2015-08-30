@@ -1,0 +1,161 @@
+<template name="autoSurvey">
+  <div class="ui grid" id="auto-survey">
+    <div class="column">
+      <div class="ui segment">
+        <div class="ui header">
+          {{_ 'survey_header'}}
+        </div>
+        <hr>
+        <form class="ui form segment">
+          <h4 class="ui dividing header">{{_ 'query_header'}}</h4>
+          <div class="three fields">
+            <div class="required field" id="minutes-query">
+              <label>{{_ 'minutes_query'}}</label>
+              <select class="ui dropdown" name="mincat">
+                <option value="">{{_ 'default_selection'}}</option>
+                {{#each minutescat}}
+                  <option value="{{pacsimId}}">{{name}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="required field" id="text-query">
+              <label>{{_ 'text_query'}}</label>
+              <select class="ui dropdown" name="textcat">
+                <option value="">{{_ 'default_selection'}}</option>
+                {{#each textcat}}
+                  <option value="{{pacsimId}}">{{name}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <div class="required field" id="data-query">
+              <label>{{_ 'data_query'}}</label>
+              <select class="ui dropdown" name="datacat">
+                <option value="">{{_ 'default_selection'}}</option>
+                {{#each datacat}}
+                  <option value="{{pacsimId}}">{{name}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+          <div class="ui accordion">
+            <div class="title active">
+              <i class="icon dropdown"></i>
+              {{_ 'more_needs'}}
+            </div>
+            <div class="content five fields hidden">
+              <div class="field">
+                <label>{{_ 'nights_and_weekeend'}}</label>
+                <select class="ui dropdown" name="minperiod">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each nandw}}
+                    <option value="{{pacsimId}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'canadian_ld'}}</label>
+                <select class="ui dropdown" name="canld">
+                  <option value="">{{_ 'default_selection'}}</option>
+                    {{#each canld}}
+                      <option value="{{pacsimId}}">{{name}}</option>
+                    {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'us_ld'}}</label>
+                <select class="ui dropdown" name="usld">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each usld}}
+                    <option value="{{pacsimId}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'intl_ld'}}</label>
+                <select class="ui dropdown" name="intlld">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each intlld}}
+                    <option value="{{pacsimId}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'vmail'}}</label>
+                <select class="ui dropdown" name="vmail">
+                  <option value="">{_ 'default_selection'}}</option>
+                  {{#each vmail}}
+                    <option value="{{pacsimId}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="ui accordion">
+            <div class="title active">
+              <i class="icon dropdown"></i>
+              {{_ 'more_needs_2'}}
+            </div>
+            <div class="content five fields hidden">
+              <div class="field">
+                <label>{{_ 'intl_text'}}</label>
+                <select class="ui dropdown" name="intltext">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each intltext}}
+                    <option value="{{pacsimId}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'pic_messages'}}</label>
+                <select class="ui dropdown" name="picmessage">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each picmessages}}
+                    <option value="{{pacsimId}}">
+                      {{name}}
+                    </option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'vid_messages'}}</label>
+                <select class="ui dropdown" name="vidmessage">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each vidmessages}}
+                    <option value="{{pacsimId}}">
+                      {{name}}
+                    </option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'incoming_calls'}}</label>
+                <select class="ui dropdown" name="inccalls">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each inccalls}}
+                    <option value="{{pacsimId}}">
+                      {{name}}
+                    </option>
+                  {{/each}}
+                </select>
+              </div>
+              <div class="field">
+                <label>{{_ 'zone_restriction'}}</label>
+                <select class="ui dropdown" name="zrest">
+                  <option value="">{{_ 'default_selection'}}</option>
+                  {{#each zrest}}
+                    <option value="{{pacsimId}}">
+                      {{name}}
+                    </option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="submit-survey">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

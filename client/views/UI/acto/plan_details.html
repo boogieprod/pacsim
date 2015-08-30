@@ -1,0 +1,95 @@
+<template name="planDetails">
+  <div class="ui grid center aligned">
+    {{#each rateplans}}
+      <div class="sixteen wide column">
+        <div class="ui segment">
+          <div class="ui header">
+            {{name}} - {{msf}}
+          </div>
+          <hr>
+          <div class="ui three column grid">
+            <div class="six wide column">
+              <div class="ui segment left aligned">
+                <div>{{_ 'minutes'}} : {{minutes}}</div>
+                <div>{{_ 'text_messages'}} : {{textmessages}}</div>
+                <div>{{_ 'data'}} : {{data}}</div>
+                <div>{{_ 'min_card'}} : {{currency mintopup}}</div>
+              </div>
+            </div>
+            <div class="four wide column">
+              <form class="ui form segment">
+                <div class="required field" id="sim-size-selection">
+                  <label>{{_ 'sim_size'}}</label>
+                  <select class="ui dropdown sim-size-dropdown" name="simsize">
+                    <option value="">{{_ 'select_a_size'}}</option>
+                    {{#each carriersims}}
+                      <option value="{{pacsimId}}">{{name}}</option>
+                    {{/each}}
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="six wide column">
+              <div class="ui segment center aligned">
+                <div class="ui labeled input" id="qty-input">
+                  <div class="ui left label" id="qty-label">
+                    {{_ 'qty'}}?
+                  </div>
+                  <input type="number" value="1" min="1" max="9" class="plan-qty"/>
+                </div>
+                <button class="ui labeled icon button add-to-cart-plan">
+                  <i class="add to cart icon"></i>
+                  {{_ 'add_to_cart'}}
+                </button>
+                <hr>
+                <button class="ui labeled icon button add-to-cart-checkout">
+                  <i class="money icon"></i>
+                  {{_ 'add_and_checkout'}}
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="ui grid left aligned">
+            <div class="eight wide column">
+              <div class="ui segment">
+                <div>
+                  {{_ 'nights_and_weekend'}} : {{nightsandweekend}}
+                </div>
+                <div>
+                  {{_ 'canadian_ld'}} : {{canlongdistance}}
+                </div>
+                <div>
+                  {{_ 'us_ld'}} : {{uslongdistance}}
+                </div>
+                <div>
+                  {{_ 'intl_ld'}} : {{intllongdistance}}
+                </div>
+                <div>{{_ 'vmail'}} : {{vmail}}</div>
+              </div>
+            </div>
+            <div class="eight wide column">
+              <div class="ui segment">
+                <div>
+                  {{_ 'intl_text'}} : {{intltextmess}}
+                </div>
+                <div>
+                  {{_ 'pic_messages'}} : {{picmessage}}
+                </div>
+                <div>
+                  {{_ 'vid_messages'}} : {{vidmessage}}
+                </div>
+                <div>
+                  {{_ 'intl_picmessages'}} : {{intlpicmess}}
+                </div>
+                <div>
+                  {{_ 'intl_vidmessages'}} : {{intlvidmess}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>

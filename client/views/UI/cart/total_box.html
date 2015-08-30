@@ -1,0 +1,42 @@
+<template name="totalBox">
+  <div class="ui one column grid right aligned" id="total-box">
+    <div class="column">
+      <table class="ui striped table">
+        <tbody>
+          <tr>
+            <td>
+              {{_ 'subtotal'}}:
+            </td>
+            <td>
+              {{currency subtotal}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              GST:
+            </td>
+            <td>
+              {{currency canadiantaxes}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              QST:
+            </td>
+            <td>
+              {{currency provincialtaxes}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Total:
+            </td>
+            <td>
+              {{currency totalaftertax}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

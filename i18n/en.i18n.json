@@ -1,0 +1,195 @@
+{
+  /* Header */
+
+  "by": "By",
+  "hi": "Hello",
+  "log_out": "Log Out",
+
+  /* Slide Alerts */
+
+	"qty_set_0_or_less": "You must add at least 1 item.",
+	"item_0_when_checkout": "There must be at least 1 item in cart to proceed to checkout.",
+	"qty_set_10_or_more": "Maximum of 9 items of the same product can be added on a single transaction.",
+	"qty_adjusted_10_or_less": "The quantity must be 1 or more.",
+	"homepage_back_error": "You're at the homepage, there's no coming back from here.",
+  "clear_cart_zero_items": "Your cart is empty",
+  "no_match_show_popular": "No plans were matching your criteria, here are our most popular ones.",
+  "fields_with_asterix_mandatory": "Fields with an asterix(*) are mandatory",
+  "text_not_set": "Text field is mandatory",
+  "data_not_set": "Data field is mandatory",
+  "minutes_not_set": "Minutes field is mandatory",
+  "must_select_simsize": "You must select a SIM size to go with your plan",
+  "must_review_terms": "You must accept our terms and conditions",
+  "fname_mandatory": "You must enter your first name",
+  "lname_mandatory": "You must enter your last name",
+  "email_mandatory": "You must enter your email address",
+  "areac_mandatory": "You must an area code for your phone number",
+
+  /* Home */
+
+  "atmosphere_packs": "Atmosphere Packages",
+  "dont_wheel": "Don't reinvent the wheel",
+  "lot_of": "There are the a lot of",
+  "helpful_packs": "helpful packages",
+  "get_started_asap": "to get you started asap. Some of them are.",
+  "removed_packs": "Removed Packages",
+  "removed_packs_info": "\"insecure\" and \"autopublish\" are removed by default!",
+  "be_faster": "Be even faster",
+  "speed_up_repeat_tasks": "To speed up a lot of simple repetitive tasks, there is the",
+  "used_with_boiler": "that can be used with this boilerplate.",
+  "simply_use": "Simply use",
+  "generate_files_root": "to generate files in the project root.",
+  "support_diff_profiles": "There is also support for different profiles, as shown",
+  "here": "here",
+  "and": "and",
+  "semantic_and_normalize_goal": "Semantic UI and Normalize.CSS are both added to increase the use of semantic tags and classes.
+  It's better for both developers and designers if there's readable html code instead of non
+  understandable string combinations.",
+  "bs3_sem-ui_contrast": "CSS classes in Bootstrap 3 and Semantic UI - for Contrast",
+  "what": "What",
+  "folder_structure": "Folder structure",
+  "seperate_concerns": "Seperate your concerns",
+  "app_structure": "There's already a structure provided for your meteor app, with some content filled in to see
+  where you can place what kind of code or where what code is generated. Here's the default structure
+  as a list:",
+
+  /* Home helpers */
+
+  "trust_packages": "Uses trusted packages",
+  "console_tool": "Has a console tool",
+  "embraces_html5": "Embraces HTML5",
+  "provides_structure": "Provides a structure",
+  "view_description": "Creates a folder under client/views with html, less and javascript files.",
+  "module_description": "Similiar to a view, but under client/modules and for re-usable components",
+  "layout_description": "Creates a layout template which yields your content, used by iron-router",
+  "common_description": "Creates a simple html file under client/views/common",
+  "routes_description": "Creates a group of routes under routes/",
+  "model_description": "Creates a model with files in model/, client/subscriptions and server/publications",
+  "less_description": "Creates a less stylesheet in client/stylesheets",
+  "large_buttons": "Large Buttons",
+  "one_column": "One column",
+  "vertical_menu": "Vertical Menu / Navigation",
+
+  /* Footer */
+
+  "project_by": "Project by",
+  "pictures_by": "Pictures by",
+
+  /* Not found */
+
+  "wrong_link": "Seems like this site doesn't exist",
+  "home_link": "Go to home",
+
+  /* UI */
+
+  /* Navbar */
+
+  "assistance": "Need assistance?",
+  "shopping_cart": "Shopping cart",
+
+  /* Footer */
+
+  "barcode_scanner": "Barcode scanner",
+  "about": "About PacSim",
+
+  /* Product selection */
+
+  "activate_sim": "Activate a SIM card",
+  "buy_ppdcard": "Buy a prepaid card",
+  "buy_simcard": "Buy a SIM card",
+  "buy_intlcard": "Buy an international card",
+
+  /* carriers */
+
+  "carrier_header": "Please select one carrier from our selection",
+
+  /* Acto Prompt */
+
+  "auto_activation": "Press here to activate your SIM given your needs",
+  "manual_activation": "Press here to manually browse available plans",
+
+  /* Manual plan selection */
+
+  "voice_data_plans": "Voice and data plans",
+  "voice_text_plans": "Voice and text plans",
+  "voice_plans": "Voice plans",
+  "data_plans": "Data plans",
+  "no_plans": " doesn't provide plans matching that criteria",
+  "plan_name": "Plan name",
+  "msf": "Monthly service fee",
+
+  /* Autoact Survey */
+
+  "survey_header": "Fill in the following survey so we could properly determine your ideal plan",
+  "query_header": "Which word better represents your usage needs for...",
+  "minutes_query": "... minutes",
+  "text_query": "... text messages",
+  "data_query": "... data",
+  "default_selection": "Select one word",
+
+  /* Plans */
+
+  "minutes": "Minutes",
+  "text_messages": "Text messages",
+  "data": "Data",
+  "min_card": "Minimum prepaid card",
+  "more_details": "More details",
+
+  /* Plan Details */
+
+  "sim_size": "Please choose a SIM size",
+  "select_a_size": "Select a size",
+  "nights_and_weekend": "Nights and week-end",
+  "canadian_ld": "Canadian long distance",
+  "us_ld": "USA long distance",
+  "intl_ld": "International long distance",
+  "intl_text": "International text messages",
+  "pic_messages": "Photo messages",
+  "vid_messages": "Video messages",
+  "vmail": "Voice mail",
+  "intl_picmessages": "International photo messages",
+  "intl_vidmessages": "International video messages",
+
+  /* Add To Cart */
+
+  "price": "Price",
+  "wanted_quantity": "Wanted quantity?",
+  "add_to_cart": "Add to cart",
+  "add_and_checkout": "Add to cart and proceed to checkout",
+  "qty": "Quantity",
+
+  /* Shopping Cart */
+
+  "empty_cart": "Your cart is empty press here for products selection page",
+  "subtotal": "Subtotal",
+  "proceed_to_checkout": "Proceed to checkout",
+  "continue_shopping": "Continue shopping",
+  "clear_cart": "Clear cart",
+  "clear_cart_header": "This action will remove all items in your cart",
+  "clear_cart_message": "There's no coming back, are you sure?",
+
+  /* Customer Form */
+
+  "f_name": "First name",
+  "l_name": "Last name",
+  "random": "Random",
+  "email": "Email address",
+  "street": "Address",
+  "area": "Area code",
+  "select_area": "Select an area code",
+  "province": "Province",
+  "select_province": "Select a province",
+  "postal": "Postal code",
+  "mandatory_fields": "Fields with an asterix(*) are mandatory",
+  "ready_to_pay": "Press here to complete payment",
+  "reset_fields": "Reset all fields",
+  "checkbox_statement": "By checking the previous checkbox, you accept the ",
+  "terms": "terms ",
+  "and": "and ",
+  "conditions": "conditions of usage",
+
+  /* Provinces */
+
+  "qc": "Quebec",
+  "bc": "British Columbia"
+}
